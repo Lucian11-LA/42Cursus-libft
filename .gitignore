@@ -1,4 +1,4 @@
-.dev
-.layout
-.out
-.exe
+*.dev
+*.layout
+*.out
+*.exe
