@@ -1,5 +1,5 @@
 #include "libft.h"
-
+ 
 int ft_atoi(const char *str)
 {
     int i;
@@ -8,13 +8,13 @@ int ft_atoi(const char *str)
 
     i = 0;
 
-    while (str[i] == '' || str[i] == '\f' || str[i] == '\n' || str[i] == '\r' || str[i] == '\t' || str[i] == '\v')
+    while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
         i++;
     sign = 1;
 
-    if (str[i] == '-' || str[i] == '+')
+    if (str[i] == 43 || str[i] == 45)
     {
-        if (str[i] == '-')
+        if (str[i] == 45)
             sign *= -1;
         i++;
     }
